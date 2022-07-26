@@ -1,0 +1,12 @@
+apiVersion: v2
+name: guestbook
+description: A Helm chart for the Guestbook application.
+type: application
+version: 0.1.0
+appVersion: "v5"
+
+# Adding custom content for Guestbook Application
+dependencies:
+  - name: redis
+    repository: https://charts.bitnami.com
+    version: 17.x.x
